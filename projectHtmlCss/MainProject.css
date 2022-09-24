@@ -1,0 +1,1147 @@
+/* ---------------------Header---------------- */
+*{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    overflow-x: hidden;
+    /* justify-content: center; */
+}
+#headerHome{
+    height: 66px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4px 0px 0px;
+    z-index: 3;
+    position: fixed;
+}
+.navFlex{
+    height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom:#f26521 solid 5px;
+}
+.logo{
+    height: 29.22px;
+    width: 190px;
+    margin: 12px 40px 13px 0px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 4px 0px 0px 160px;
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 1px;
+    font-stretch: wider;
+    /* position: relative; */
+}
+.navbar li{
+    margin: 0px 1px;
+    padding: 12px 12px 13px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.navbar li:nth-child(1){
+    background-color: #f26521;
+}
+.navbar li:hover {
+    background-color:#3d4146;
+    color: #f7f7f7;
+}
+.navbar li:hover a{
+    color: #f7f7f7;
+}
+.navIcon{
+    display: flex;
+}
+.searchIcon{
+    margin: 12px 0px 0px 20px;
+    padding-top: 5px;
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+/* .pg2:hover .WhatWeDo1Hover{
+    display:contents;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+} */
+@media screen and (min-width:320px) and (max-width:480px) {
+    /* body{
+        display: contents;
+    } */
+    #headerHome{
+        height: 488px;
+        width: 100%;
+        display: block;
+        align-content: center;
+        position: absolute;
+        /* display: flex;
+        justify-content: center; */
+        background-color: transparent;
+    }
+    .navFlex{
+        /* height: ; */
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        border: none;
+        display: block;
+    }
+    /* .mediaDiv{
+
+    } */
+    .logo{
+        width: 50%;
+        margin: 0px;
+    }
+    .navbar{
+        position: absolute;
+        /* display: flex; */
+        top: 70px;
+        right: 10px;
+        /* margin-top: 80px; */
+        padding: 4px 0px 0px;
+        flex-direction: column;
+    }
+    .navbar li{
+        font-size: 10px;
+        padding: 6px 5px 6px;
+        background-color: #1e1e1ee6;
+        border-radius: 20px;
+        margin-bottom: 14px;
+        box-shadow: 1px;
+    }
+    .navbar li a{
+        color: white;
+        font-weight: bold;
+    }
+    .searchIcon{
+        display: none;
+    }
+}
+/* ---------------------Image Section---------------- */
+#bigImgSec{
+    height: 558px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* background-image: url(image/MainProject/1573670983201.jpg);
+    background-position: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.bigImgDiv{
+    width: 1349px;
+    height: 558px;
+    background-image: url(../image/MainProject/1573670983201.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.bigImgDiv img{
+    width: 1349px;
+    height: 558px;
+}
+.textBox{
+    /* height: 277.19px; */
+    width: 760px;
+    /* display: flex; */
+    position: absolute;
+    bottom: 160px;
+    left: 50px;
+    color: #ffffff;
+    font-size: 36px;
+    padding: 20px 20px 20px 60px;
+    font-family: 'Khand', sans-serif;
+    text-align: left;
+}
+.textBox h1{
+    margin: 0px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.textBox button{
+    color: #212529;
+    background-color: #D0D3D4;
+    padding: 9.6px 16px 9.6px 16px;
+    margin: 32px 0px 16px;
+    font: 16px 'Khand', sans-serif;
+    border: none;
+    display: flex;
+}
+/* .imgPara{
+    position: relative;
+} */
+.buttonIconTxt{
+    margin: 0px 0px 0px 10px;
+    /* width: 25px;
+    height: 19.36px; */
+    /* padding: 2px 0px 0px 5px; */
+    /* color: #212529; */
+    /* position: absolute; */
+    /* left: 50px; */
+    /* top: 10px; */
+    /* z-index: 1; */
+}
+.emptyDiv{
+    height: 108px;
+    width: 30px;
+    background-color: #fC4C02;
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+}
+.imgContainer{
+    width: 250px;
+    height: 172px;
+    background-color: #3D4146F2;
+    color: #ffffff;
+    text-align: left;
+    padding: 6px 0px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    /* bottom: 110px; */
+    /* display: block; */
+}
+.innerContainer{
+    padding: 4px 7px 4px 16px;
+    font-size: 13px;
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #bigImgSec{
+        height: 488px;
+        width: 100%;
+    }
+    .bigImgDiv{
+        height: 488px;
+        width: 100%;
+    }
+    /* .bigImgDiv img{
+        height: 488px;
+        width: 320px;
+    } */
+    .imgContainer{
+        display: none;
+    }
+    .textBox{
+        left: 20px;
+        bottom: 220px;
+        font-size: 20px;
+        width: 220px;
+        padding: 5px 5px 5px 10px;
+        line-height: 1;
+    }
+    .textBox button{
+        padding: 8px 18px;
+        /* z-index: 4; */
+    }
+    .emptyDiv{
+        height: 120px;
+        width: 10px;
+        left: 0px;
+        bottom: 315px;
+    }
+}
+/* ---------------------Hover Section---------------- */
+    #hoverSec{
+        display: none;
+        width: 80%;
+        height: 500px;
+        overflow-y: scroll;
+    }
+/* ---------------------Text Section---------------- */
+#Sec{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.onlyText{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: 100;
+    /* letter-spacing: 1px; */
+    padding: 20px 15px;
+}
+.onlyText span{
+    color: #fc4c02;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #Sec{
+        width: 100%;
+    }
+    .onlyText{
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+    }
+    .onlyText br{
+        display: none;
+    }
+}
+/* ---------------------Video Section---------------- */
+#videoSec{
+    height: 356.22px;
+    display: flex;
+    justify-content: center;
+}
+.videoDiv{
+    height: 326.22px;
+    width: 644.5px;
+    display: flex;
+    justify-content: right;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.videoImg{
+    width: 580.05px;
+    height: 326.22px;
+    padding-left: 15px;
+    transition: transform 2s;
+}
+.videoImg:hover{
+    transform: scale(1.1,1.1);
+}
+.videoTxtDiv{
+    height: 132px;
+    width: 310px;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    background-color: #ffffff;
+    text-align: left;
+}
+.videoTxtDiv h6{
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+.videoTxtDiv h3{
+    font-family: 'Ubuntu','Jura', sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 1;
+    margin: 15px 0px;
+}
+.videoTxtDiv p{
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1;
+    line-height: 1.3;
+}
+.videoTxtDiv2{
+    height: 173.19px;
+}
+.videoTxtDiv2 button{
+    border: none;
+    width: 144.55px;
+    height: 45.19px;
+    display: flex;
+    padding: 9.6px 16px 9.6px 16px;
+    margin: 20px 0px 0px;
+    font: 16px 'Khand', sans-serif;
+    background-color: #fC4C02;
+}
+.videoTxtDiv2 button p{
+    font: 16px 'Khand', sans-serif;
+    font-size: 16px;    
+    color: #ffffff;
+}
+.icon{
+    color: #ffffff;
+}
+.blankDiv{
+    position: absolute;
+    bottom: 45%;
+    left: 0px;
+    height: 30px;
+    width: 8px;
+    background-color: #e9e4e1;
+}
+.blankDiv2{
+    bottom: 52%;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #videoSec{
+        height: max-content;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+    .videoDiv{
+        width: 96%;
+        height: 378.91px;
+        padding: 0px;
+        margin: 0px;
+        /* justify-content: center; */
+    }
+    .videoImg{
+        width: 96%;
+        height: 162.91px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .videoTxtDiv{
+        width: 80%;
+        height:max-content;
+        padding: 20px;
+        margin: 0px 2% 8%;
+        top: 35%;
+        left: 4%;
+        border-top: #f26521 solid 3px;
+    }
+    .blankDiv{
+        display: none;
+    }
+}
+/* ---------------------Img Container Section---------------- */
+#imgContSec{
+    height: 3040px;
+    width: 100%;
+    /* padding: 80px 15px; */
+    display: flex;
+    justify-content: center;
+}
+.imgContDiv{
+    height: 2880px;
+    width: 1200px;
+    padding: 80px 15px;
+    margin:  0px 185px;
+    display: flex;
+}
+.imgContDiv:hover img{
+    opacity: 0.6;
+}
+.specialClass:hover img{ 
+    opacity: 1;
+}
+.verticalCont{
+    display: flex;
+    flex-direction: column;
+}
+.leftSpacing{
+    margin-left: 30px;
+}
+.img1{
+    width: 585px;
+    height: 360px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img1Div{
+    width: 476.5px;
+    padding: 25px;
+    color: #3D4146;
+    background-color: #ffffff;
+    border-top: #fC4C02 2px solid;
+    position: absolute;
+    bottom: -30px;
+    left: 5%;
+    text-align: left;
+}
+.img1Div h5{
+    font-size: 28px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: 100;
+}
+.img1Div p{
+    margin-top: 4px;
+    font-size: 16px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.img1Div button {
+    display: flex;
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    color:#fC4C02;
+    border: solid 1px;
+    padding: 9.6px 16px 9.6px 16px;
+    border-color: #fC4C02;
+    background-color: #ffffff;
+}
+.img1Div button i{
+    color: #fC4C02;
+}
+.img1Div h4{
+    font-size: 20px;
+    margin: 0px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: 100;
+}
+.img2{
+    width: 585px;
+    height: 480px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img3{
+    width: 585px;
+    height: 660px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img4{
+    width: 585px;
+    height: 420px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img5{
+    width: 585px;
+    height: 660px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img5Differ{
+    color: #ffffff;
+    background-color:#3D4146;
+}
+.img5Differ button{
+    background-color: #3D4146;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.img5Differ button i{
+    color: #ffffff;
+}
+.img6{
+    width: 585px;
+    height: 360px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img7{
+    width: 585px;
+    height: 360px;
+    margin-bottom: 60px;
+    position: relative;
+}
+/* .img7Differ{
+    margin: 0px;
+}
+.img7Differ p{
+    margin: 0px;
+} */
+.img8{
+    width: 585px;
+    height: 360px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img9{
+    width: 585px;
+    height: 600px;
+    /* margin-bottom: 30px; */
+    position: relative;
+}
+.img10{
+    width: 585px;
+    height: 600px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.img11{
+    width: 585px;
+    height: 360px;
+    /* margin-bottom: 30px; */
+    position: relative;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #imgContSec{
+        /* height: max-content; */
+        /* height: 4850px; */
+        height: fit-content;
+        margin: 10% 0% 0%;
+        /* display:block; */
+    }
+    .imgContDiv{
+        width: 96%;
+        padding: 0px;
+        margin: 0%;
+        height: max-content;
+        flex-direction: column;
+        /* display: block; */
+    }
+    /* .verticalCont{
+        display: block;
+    } */
+    .leftSpacing{
+        margin: 0px;
+    } 
+    .img1Div{
+        width: 70%;
+        height: max-content;
+        margin: 0% 3%;
+        bottom: 0px;
+        /* left: 6.5%; */
+    } 
+    .img1Div h5{
+        font-size: 20px;
+    }
+    .img1Div h4{
+        font-size: 20px;
+    }
+    .img1Div p{
+        font-size: 14px;
+    }
+    .specialClass{
+        width: 95%;
+        height: 150%;
+        margin: 0% 0% 60px 2%;
+        scale: (1,1);
+    }
+}
+/* ---------------------Investors Section---------------- */
+#investorSec{
+    height: 182.11px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.investorMainDiv{
+    height: 182.11px;
+    width: 1599.98px;
+    display: flex;
+    justify-content: center;
+}
+.investorDiv{
+    width: 1170px;
+    height: 142.11px;
+    padding: 20px 15px;
+}
+.investorDiv h6{
+    color: #fC4C02;
+    margin: 27px 0px 0px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 24px;
+}
+.investorDivButton{
+    font-size: 15px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    padding: 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    color: #3D4146;
+}
+.investorDivButton button{
+    display: flex;
+    padding: 9.6px 16px 9.6px 16px;
+    margin: 20px 0px 0px 5px;
+}
+.investorDivButton p{
+    margin: 5px 0px 0px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 16px;
+}
+.investorDivButton button i{
+    color: #3D4146;
+    font-weight: 100;
+    margin-left: 5px;
+}
+/* .investorDivButton button:hover i{
+    margin-left: 8px;
+} */
+@media screen and (min-width:320px) and (max-width:480px) {
+    #investorSec{
+        /* height: max-content; */
+        /* height: 533px; */
+        height: fit-content;
+        width: 100%;
+        /* display: block; */
+        /* margin-bottom: 5%; */
+    }
+    .investorMainDiv{
+        width: 96%;
+        /* height: 533px; */
+        height: fit-content;
+        flex-direction: column;
+        margin: 0% 2%;
+    }
+    .investorDiv{
+        width: 96%;
+        height: fit-content;
+        padding: 20px 0px 0px;
+        margin: 0% 2%;
+    }
+    .investorDivButton{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+    }
+    .investorDivButton button{
+        width: 100%;
+        height: 50px;
+        margin: 20px 0px 0px;
+        justify-content: space-between;
+    }
+    .investorDivButton .button p{
+        width: 80%;
+    }
+}
+/* ---------------------Reach Section---------------- */
+#reachSec{
+    height: 385.38px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.reachDiv{
+    width: 1349px;
+    height: 385.38px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.reachImg{
+    width: 1349px;
+    height: 385.38px;
+}
+.reachDivCont{
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    margin: 0px 15px;
+}
+.reachTxtDiv{
+    padding: 40px;
+    margin: 11.684px;
+}
+.reachTxtDiv h1{
+    color: #fC4C02;
+    font-size: 60px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: 100;
+}
+.reachTxtDiv h6{
+    color: #fC4C02;
+    font-size: 20px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: 100;
+}
+.reachTxtDiv p{
+    color: #3D4146;
+    font-size: 16px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #reachSec{
+        height: 870px;
+        width: 100%;
+    }
+    .reachDiv{
+        height: auto;
+        width: 96%;
+        background-image: url(../image/MainProject/1434663740439.png);
+        background-position: center;
+        background-size: cover;
+    }
+     .reachImg{
+        height: auto;
+        width: 100%;
+        display: none;
+    }
+    .reachDivCont{
+        width: 100%;
+        height:auto;
+        bottom: 0%;
+        flex-direction: column;
+        margin: 0%;
+    }
+
+}
+/* ---------------------content Section---------------- */
+#contentSec{
+    height: 534.89px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.upperContentDiv{
+    /* width: 1349px;
+    height: 246.19px; */
+    display: flex;
+    justify-content: center;
+}
+.uppermainDiv1{
+    width: 674.5px;
+    height: 246.19px;
+    position: relative;
+    background-image: url(../image/MainProject/1434663948420.jpg);
+    background-size: cover;
+    /* opacity: 0.8; */
+} 
+.opacDiv{
+    width: 674.5px;
+    height: 246.19px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.uppermainDiv1:hover .opacDiv{
+    opacity: 0.7;
+}
+.upperInnerDiv{
+    width: 644.5px;
+    padding: 70px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    /* background-image: url(image/MainProject/1434663948420.jpg);
+    opacity: 6; */
+}
+.upperInnerDiv button{
+    height: 45.19px;
+    width: 144.55px;
+    display: flex;
+    padding: 9.6px 16px 9.6px 16px;
+    margin-left: 39%;
+    margin-top: 25px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    background-color:transparent;
+    /* justify-content: center; */
+}
+.upperInnerDiv h4{
+    font-size: 24px;
+    font-weight: 100;
+}
+.upperInnerDiv button p{
+    margin-top: 5px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 16px;
+}
+.upperInnerDiv button i{
+    margin-left: 5px;
+}
+.upperInnerDiv button:hover i{
+    margin-left: 8px;
+}
+.uppermainDiv2{
+    background-image: url(../image/MainProject/1434663865968.jpg);
+}
+.lowerContentDiv{
+    /* height: 301.7px;
+    width: 1349px; */
+    display: flex;
+    justify-content: center;
+}
+.lowerInnerDiv{
+    width: 644.5px;
+    height: 261.7px;
+    padding: 20px 15px;
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.lowerLeftImg{
+    height:121.7px;
+    width:275px;
+    margin: 24px 0px;
+}
+.lowerInnerDiv h6{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.lowerInnerDiv p{
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+.lowerRightImg{
+    margin: 24px 0px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #contentSec{
+        width: 100%;
+        height: 1100px;
+    }
+    .upperContentDiv{
+        width: 100%;
+        /* margin: 0px 1%; */
+        flex-direction: column;
+    }
+    .uppermainDiv1{
+        width: 100%;
+        /* margin: 0% 2%; */
+    }
+    .upperInnerDiv{
+        width: 100%;
+        padding: 70px 0px;
+    }
+    .upperInnerDiv button{
+        margin: 20px auto 0px;
+    }
+    .upperInnerDiv h4{
+        margin: 0px;
+        /* margin-block-start: 0%;
+        margin-block-end: 0%; */
+    }
+    .opacDiv{
+        width: 100%;
+        /* margin: 0% 2%; */
+    }
+    .lowerContentDiv{
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+    }
+    .lowerInnerDiv{
+        width: 98%;
+        margin: 0px 1%;
+        height: 309px;
+        padding: 20px 0px;
+        /* padding: 5% 8%; */
+    }
+    .sizeClass{
+        height: 220px;
+    }
+}
+/* ------------------------Footer Section---------------------------- */
+#footerSec{
+    width: 100%;
+    height: 528.75px;
+    color: #f7f7f7;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+.footMainDiv{
+    /* width: 1317px; */
+    /* width: 100%; */
+    height: 480.75px;
+    padding: 48px 16px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footTxtDiv{
+    display: flex;
+    justify-content: center;
+    width:1200px;
+    height:388.75px;
+    margin-bottom: 92px;
+}
+.logoFootDiv{
+    width: 369.98px;
+    height: 339.28px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-size: 14px;
+}
+.logoFootDiv img{
+    width: 190px;
+    height: 29.22px;
+    padding: 3.2px 0px;
+}
+.boxDivFoot{
+    height:57.49px ;
+    width: 337.98px;
+    border: solid 1px #575858;
+    padding: 8px 16px 3.2px;
+    margin-top: 32px;
+    color: #f7f7f7;
+    background-color: black;
+    text-align: left;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    /* font-weight: 100; */
+}
+.boxDivFoot p{
+    font-size: 37px;
+}
+.boxDivFoot span{
+    font-size: 18.5px;
+}
+.divBoxInvest{
+    padding: 16px;
+    color: #D0D3D4;
+    background-color: #1b1b1b;
+    font-size: 14px;
+}
+.divBoxInvest:hover{
+    text-decoration: underline;
+}
+.footIconDiv{
+    padding: 26px 0px;
+    font-size: 14px;
+}
+.footIcons{
+    width: 66px;
+    /* height: 26px; */
+    /* color: #f7f7f7; */
+    opacity: 0.6;
+    /* background-color: #f7f7f7; */
+    font-size: 30px;
+    padding: 3.2px 0px;
+
+}
+.whatWeDoDiv{
+    width: 170px;
+    height: 270.38px;
+    padding: 0px 15px;
+}
+.footPara{
+    padding: 3.2px 0px;
+    color: #D0D3D4;
+    font-size: 14px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.footPara:hover{
+    text-decoration: underline;
+}
+.ourCompanyDiv{
+    height: 321.75px;
+}
+.newsDiv{
+    height: 388.75px;
+}
+.investMargin{
+    margin: 32px 0px 0px;
+}
+.colorFootTitle{
+    color: #8d8d8d;
+    font-size: 13px;
+}
+.careersFootDiv{
+    height: 194.63px;
+}
+.footFootDiv{
+    width: 100%;
+    /* height: 339.28px; */
+    height: 42px;
+    background-color: black;
+    /* margin-top: 50px; */
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.footFootDiv ul{
+    color: #f7f7f7;
+    font-size: 14px;
+    padding: 12px 0px;
+    list-style: none;
+    display: flex;
+    margin-right: 30%;
+}
+.footFootDiv ul li{
+    color: #D0D3D4;
+    font-size: 12px;
+    padding: 0px 10px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.rightBorder{
+    border-right: solid 1px #f7f7f7;
+}
+.footFootDiv ul li:hover{
+    text-decoration: underline;
+}
+.footFootDiv p{
+    color: #D0D3D4;
+    font-size: 12px;
+    padding: 12px 0px 0px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+#designPara{
+    margin-left: 20px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #footerSec{
+        width: 100%;
+        height: 1700px;
+    }
+    .footMainDiv{
+        width: 100%;
+        /* height: 1000px; */
+    }
+    .footTxtDiv{
+        width: 100%;
+        display: block;
+        /* display: grid; */
+    }
+    .logoFootDiv{
+        width: 100%;
+        padding: 0%;
+        display: block;
+    }
+    .boxDivFoot{
+        width: 100%;
+        padding: 8px 0px 3.2px;
+    }
+    /* .whatWeDoDiv{
+        display: grid;
+        flex-direction: column;
+        display:block;
+    } */
+    /* .side{
+        display: grid;
+    } */
+    .footFootDiv{
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footFootDiv ul{
+        margin: 0%;
+    }
+    .footFootDiv ul li{
+        font-size: 10px;
+    }
+    .footFootDiv p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .footTxtDiv br{
+        display: none;
+    }
+    .footIcons{
+        width: 15%;
+    }
+    #designPara{
+        margin: 0px;
+        padding: 0px;
+    }
+}

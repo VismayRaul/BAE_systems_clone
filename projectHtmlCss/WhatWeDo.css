@@ -1,0 +1,564 @@
+/* ---------------------Header---------------- */
+*{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    /* justify-content: center; */
+}
+#headerHome{
+    height: 66px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4px 0px 0px;
+    z-index: 3;
+    position: fixed;
+}
+.navFlex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom:#f26521 solid 5px;
+}
+.logo{
+    height: 29.22px;
+    width: 190px;
+    margin: 12px 40px 13px 0px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 4px 0px 0px 160px;
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 1px;
+    font-stretch: wider;
+}
+.navbar li{
+    margin: 0px 1px;
+    padding: 12px 12px 13px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.navbar li:nth-child(2){
+    background-color: #f26521;
+}
+.navbar li:hover {
+    background-color:#3d4146;
+    color: #f7f7f7;
+}
+.navbar li:hover a{
+    color: #f7f7f7;
+}
+.navIcon{
+    display: flex;
+}
+.searchIcon{
+    margin: 12px 0px 0px 20px;
+    padding-top: 5px;
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    /* body{
+        display: contents;
+    } */
+    #headerHome{
+        height: 558px;
+        width: 100%;
+        display: block;
+        align-content: center;
+        position: absolute;
+        /* display: flex;
+        justify-content: center; */
+        background-color: transparent;
+    }
+    .navFlex{
+        /* height: ; */
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        border: none;
+        display: block;
+    }
+    /* .mediaDiv{
+
+    } */
+    .logo{
+        width: 50%;
+        margin: 0px;
+    }
+    .navbar{
+        position: absolute;
+        /* display: flex; */
+        top: 70px;
+        right: 10px;
+        /* margin-top: 80px; */
+        padding: 4px 0px 0px;
+        flex-direction: column;
+    }
+    .navbar li{
+        font-size: 10px;
+        padding: 6px 5px 6px;
+        background-color: #1e1e1ee6;
+        border-radius: 20px;
+        margin-bottom: 14px;
+        box-shadow: 1px;
+    }
+    .navbar li a{
+        color: white;
+        font-weight: bold;
+    }
+    .searchIcon{
+        display: none;
+    }
+}
+/* ---------------------Image Section---------------- */
+#bigImgSec{
+    height: 339px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bigImgDiv{
+    width: 1349px;
+    height: 339px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.bigImgDiv img{
+    width: 1366px;
+    height: 273px;
+    margin-top: 66px;
+}
+.textBox{
+    width: 760px;
+    position: absolute;
+    bottom: 60px;
+    left: 200px;
+    color: #ffffff;
+    font-size: 36px;
+    padding: 20px 20px 20px 60px;
+    font-family: 'Khand', sans-serif;
+    text-align: left;
+}
+.textBox h1{
+    margin: 0px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.emptyDiv{
+    height: 40px;
+    width: 30px;
+    background-color: #fC4C02;
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #bigImgSec{
+        /* height: 488px; */
+        height: 558px;
+        width: 100%;
+    }
+    .bigImgDiv{
+        height: 488px;
+        width: 100%;
+        background-image: url(../image/MainProject/WhatWeDo/1434663398563.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .bigImgDiv img{
+       display: none;
+    }
+    .imgContainer{
+        display: none;
+    }
+    .textBox{
+        left: 20px;
+        bottom: 220px;
+        font-size: 20px;
+        width: 220px;
+        padding: 5px 5px 5px 10px;
+        line-height: 1;
+    }
+    .textBox button{
+        padding: 8px 18px;
+    }
+    .emptyDiv{
+        height: 40px;
+        width: 20px;
+        left: 0px;
+        bottom: 220px;
+    }
+}
+/* ------------------------Wrapper Section---------------------------- */
+#wrapperSec{
+    height: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 0px 0px 40px; */
+}
+.wrapperDiv{
+    height: 33px;
+    width: 960px;
+    padding: 10px 0px;
+    border-bottom: dotted #3d4146 1px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.greyDiv{
+    width: 148px;
+    height: 32px;
+    color: white;
+    /* font-size: 14px; */
+    background-color: #3d4146;
+    display: flex;
+    justify-content: space-between;
+}
+.greyDiv:hover{
+    background-color: #63666a;
+}
+.greyDiv h6{
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 22px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+/* .chevronDiv{
+    height: 60px;
+    width: 60px;
+    padding-bottom: 20px;
+} */
+.chevron{
+    height: 58px;
+    width: 58px;
+    color: #f5f5f5;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+}
+.chevron2{
+    height: 58px;
+    width: 58px;
+    color: #f5f5f5;
+    position: absolute;
+    top: -3px;
+    left: 116px;
+}
+.chevron3{
+    height: 58px;
+    width: 58px;
+    color: #f5f5f5;
+    position: absolute;
+    top: -3px;
+    left: 123px;
+}
+.divHomeOutline{
+    color: white;
+    font-size: 20px;
+    padding-left: 9px;
+    padding-top: 4px;
+}
+.homeOutline{
+    font-size: 8px;
+}
+.print{
+    height: 32px;
+    width: 32px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #wrapperSec{
+        display: none;
+    }
+}
+/* ------------------------folio Section---------------------------- */
+#folioSec{
+    height: 1614.19px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.folioLeftDiv{
+    width: 714px;
+    height: 1566.19px;
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.folioContainer{
+    width: 355px;
+    height: 1566.19;
+}
+#folioContainer{
+    width: 345px;
+    margin-left: 10px;
+}
+.folioImgTxtDiv{
+    width: 345px;
+    height: 363.05px;
+    margin-bottom: 20px;
+}
+.folioImgTxtDiv:hover .folioTxtDiv{
+    border-top: #f26521 solid 3px;
+}
+.folioImgDiv{
+    height: 195.06px;
+    width: 345px;
+}
+.folioTxtDiv{
+    width: 305px;
+    height: 127.99px;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.folioImgTxtDiv:hover .folioTxtDiv h4{
+    color: #f26521;
+}
+.folioTxtDiv h4{
+    font-size: 22px;
+    margin: 0px 0px 10px;
+    color: #1b1b1b;
+}
+.folioTxtDiv p{
+    font-size: 14px;
+    margin: 0px 0px 15px;
+    color: #63666a;
+}
+.folioMapDiv{
+    width: 222px;
+    height: 595.52px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: white;
+    border-top: solid 3px #1e1e1e;
+    text-align: left;
+}
+.folioMapDiv h1{
+    margin: 0px 10px;
+    padding: 15px 0px;
+    border-bottom: dotted 2px #1e1e1e;
+    font-size: 20px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    color: #3d4146;
+}
+.folioMapDiv p{
+    padding: 10px 10px 10px 20px;
+    color: #474c55;
+    font-size: 15px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    font-weight: bolder;
+}
+.folioParaDiv{
+    display: flex;
+}
+.folioParaDiv p{
+    font-size: 12px;
+}
+.folioIcon{
+    padding: 10px 0px 0px 15px;
+}
+.folioMapDiv button{
+    font-size: 11px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+    background-color: #D0D3D4;
+    color: #63666a;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 0px 0px 20px 20px;
+}
+.folioMapDiv button:hover{
+    background-color: #f26521;
+    color: white;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #folioSec{
+        height: 3250px;
+        flex-direction: column;
+        width: 100%;
+        /* margin-top: 100px; */
+    }
+    .folioLeftDiv{
+        width: 90%;
+        height: 2800px;
+        margin: 0% auto;
+        flex-direction: column;
+    }
+    .folioContainer{
+        width: 100%;
+        /* margin: auto; */
+    }
+    #folioContainer{
+        width: 100%;
+        margin: 0px;
+    }
+    .folioImgDiv{
+        width: 100%;
+    }
+    .folioImgTxtDiv{
+        width: 100%;
+    }
+    .folioTxtDiv{
+        width: 90%;
+        /* height: fit-content; */
+        /* height: fit-content; */
+        /* margin-bottom: 20px; */
+        padding: 5%;
+    }
+    .folioTxtDiv p{
+        font-size: 12px;
+    }
+    .folioMapDiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+/* ------------------------Footer Section---------------------------- */
+#footerSec{
+    width: 100%;
+    height: 138px;
+    color: #f7f7f7;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+.footMainDiv{
+    /* width: 1317px; */
+    width: 960px;
+    height: 46px;
+    margin: 28px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.footTxtDiv{
+    display: flex;
+    justify-content: center;
+    width:1200px;
+    height:96px;
+    margin-bottom: 92px;
+}
+.footMainDiv img{
+    width: 190px;
+    height: 29.22px;
+    padding: 3.2px 0px;
+}
+.footIconDiv{
+    padding: 0px 0px;
+    font-size: 14px;
+    display: flex;
+}
+.footOverIcon{
+    width: 44px;
+    height: 44px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #3d4146;
+}
+.footIcons{
+    opacity: 0.6;
+    font-size: 30px;
+    margin-top: 8px;
+}
+.footFootDiv{
+    width: 100%;
+    /* height: 339.28px; */
+    height: 42px;
+    background-color: black;
+    /* margin-top: 50px; */
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.footFootDiv ul{
+    color: #f7f7f7;
+    font-size: 14px;
+    padding: 12px 0px;
+    list-style: none;
+    display: flex;
+    margin-right: 30%;
+}
+.footFootDiv ul li{
+    color: #D0D3D4;
+    font-size: 12px;
+    padding: 0px 10px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+.rightBorder{
+    border-right: solid 1px #f7f7f7;
+}
+.footFootDiv ul li:hover{
+    text-decoration: underline;
+}
+.footFootDiv p{
+    color: #D0D3D4;
+    font-size: 12px;
+    padding: 12px 0px 0px;
+    font-family: 'Ubuntu','Khand','Jura', sans-serif;
+}
+#designPara{
+    margin-left: 20px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    #footerSec{
+        height: 300px;
+    }
+    .footMainDiv{
+        width: 100%;
+        /* height: ; */
+        flex-direction: column;
+        /* align-content: center; */
+    }
+    .footMainDiv img{
+        margin: auto;
+    }
+    .footIconDiv{
+        padding: 26px 0px;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+    .footFootDiv{
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footFootDiv ul li{
+        /* display: inline-flex;
+        flex-direction: column; */
+        /* float: left; */
+        font-size: 10px;
+    }
+    .footFootDiv ul{
+        margin: 0px; 
+    }
+    #designPara{
+        margin: 0px;
+        padding: 0px;
+    }
+    .footFootDiv p{
+        /* text-align: center; */
+        font-size: 10px;
+    }
+}
